@@ -1,0 +1,9 @@
+[ubuntu]
+192.168.56.102  ansible_ssh_user=node1
+
+[redhat]
+192.168.56.105  ansible_ssh_user=node4
+
+[webserver]
+192.168.56.105  package_name=httpd
+192.168.56.102  package_name=apache2

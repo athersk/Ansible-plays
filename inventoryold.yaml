@@ -1,0 +1,7 @@
+virtualmachines:
+  hosts:
+    vm01:
+       ansible_node: 192.168.56.102
+    vm02: 
+       ansible_node2: 192.168.56.103
+

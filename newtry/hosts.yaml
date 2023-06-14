@@ -1,0 +1,14 @@
+all:
+  children:
+    webservers:
+      hosts:
+        192.168.56.105:
+        package_name: httpd
+        php_module:
+          - php
+        192.168.56.102:
+        package_name: apache2 
+        php_module:
+          - php
+          - libapache2-mod-php
+          - php-cli

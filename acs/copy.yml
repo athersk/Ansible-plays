@@ -1,0 +1,8 @@
+---
+- name: test copy module
+  hosts: 192.168.56.102
+  tasks: 
+    - name: copy files from scs to node1
+      copy:
+          src: /home/ubuntu/apache2test.yaml
+          dest: /home/ubuntu/backupdata

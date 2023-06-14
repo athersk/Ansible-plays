@@ -1,0 +1,8 @@
+---
+  - name: testsync
+    hosts: 192.168.56.102
+    tasks:
+         - name: sync my data from acs to datanode
+           synchronize:
+                     src: mani_backup
+                     dest: /home/ubuntu/manibackup

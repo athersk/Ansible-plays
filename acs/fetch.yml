@@ -1,0 +1,8 @@
+---
+- name: test fetch module
+  hosts: 192.168.56.102
+  tasks:
+    - name:
+      fetch:
+         src: /home/ubuntu/backupdata/mani.yml
+         dest: .

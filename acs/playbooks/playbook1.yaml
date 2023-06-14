@@ -1,0 +1,9 @@
+---
+ - name: tis is playbook1
+   hosts: all
+   become: yes
+   tasks:
+           - name: create group
+             group:
+                     name: aws
+                     state: present
